@@ -284,6 +284,7 @@ aside .companyInfo h3 {
 }
 aside .companyInfo a {
 	color: #005bac;
+	display: block;
 }
 aside .companyInfo a:hover {
 	text-decoration: underline;
@@ -294,11 +295,6 @@ aside .companyInfo ul {
 }
 aside .companyInfo ul li {
 	width: 250px;
-	background-image: url("../images/icon-chevronRight.svg");
-	background-size: 7px 10px;
-	background-repeat: no-repeat;
-	background-position: 0 5px;
-	padding-left: 15px;
 	box-sizing: border-box;
 	display: block;
 }
