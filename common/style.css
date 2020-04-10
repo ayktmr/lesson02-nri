@@ -1,0 +1,395 @@
+body {
+	margin: 0;
+	font-family: cabin;
+	color: #333333;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+h1,h2,h3 {
+	margin: 0;
+}
+
+/* ＞画像 */
+img.icon_chevron {
+	width: 7px;
+	height: 10px;
+	margin: 0 5px;
+}
+
+/* ヘッダー */
+header {
+	padding-left: 35px;
+	background-color: #ffffff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: right;
+}
+/* NRIロゴ */
+.articleDetailHead .logo_company {
+	float: left;
+}
+.articleDetailHead .logo_company img {
+	width: auto;
+	height: 30px;
+	margin: 15px 0;
+}
+/*　グローバルメニュー　*/
+.articleDetailHead .globalNavi:after {
+	content= "";
+	clear: both;
+	display: block;
+}
+.articleDetailHead .globalNavi {
+	float: right;
+	text-align: right;
+}
+.articleDetailHead .globalNavi a {
+	font-size: 13px;
+	line-height: 1.5;
+	font-weight: bold;
+	color: #000000;
+	display: block;
+	padding: 20px 0;
+}
+.articleDetailHead .globalNavi a:hover {
+	color: #005bac;
+	border-bottom: 2px solid #005bac;
+	box-sizing: border-box;
+}
+.articleDetailHead .globalNavi ul:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+.articleDetailHead .globalNavi ul {
+	margin:0;
+}
+.articleDetailHead .globalNavi ul li {
+	margin-right: 15px;
+	float: left;
+}
+/*　虫眼鏡地球ハンバーガーアイコン　*/
+.articleDetailHead .logo_menu:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+.articleDetailHead .logo_menu img {
+	width: 20px;
+	height: 20px;
+}
+.articleDetailHead .logo_menu a {
+	float: left;
+	padding: 20px 19px;
+	display: block;
+}
+.articleDetailHead .logo_menu {
+	float: right;
+	bottom: 0;
+}
+
+/*　パンくずリスト　*/
+main .articleDetail .topicPath {
+	margin-bottom: 30px;
+}
+main .articleDetail .topicPath ul:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+main .articleDetail .topicPath ul {
+	margin-left: 40px;
+}
+main .articleDetail .topicPath ul li {
+	color: #999999;
+	font-size: 12px;
+	line-height: 1.5;
+	float: left;
+}
+
+/*---------- main ----------*/
+main {
+	margin: 70px 0;
+	z-index: 0;
+}
+
+/* トップ画像 */
+main .articleDetailBody .mainVisual .mainVisualImage img {
+	height: 250px;
+	width: 100%;
+	object-fit: cover;
+	vertical-align: bottom;
+}
+
+/* トップ画像に重なるテキスト */
+.articleDetailBody .mainVisual {
+	position: relative;
+}
+.articleDetailBody .mainVisualText {
+	color: #ffffff;
+	position: absolute;
+	top: 30px;
+	left: 20px;
+}
+.articleDetailBody .mainVisualText p {
+	font-size: 18px;
+	margin: 0;
+}
+.articleDetailBody .mainVisualText h1 {
+	font-size: 26px;
+	margin: 0;
+	padding-top: 20px;
+}
+/* share sns */
+main .articleBusiness .sns_btn {
+	text-align: right;
+	margin-top: 30px;
+}
+main .articleBusiness .sns_btn img {
+	width: 24px;
+	height: 24px;
+	margin-left: 17px;
+	vertical-align: middle;
+}
+main .articleBusiness .sns_btn p {
+	font-size: 10px;
+	line-height: 1.6;
+	color: #666666;
+	font-weight: bold;
+	display: inline-block;
+}
+
+/* articleBusiness */
+main .articleBusiness {
+	width: 800px;
+	margin: 0 auto;
+}
+main .articleBusiness .headingTypeA h2 {
+	font-size: 19px;
+	color: #000000;
+	margin: 35px 0;
+}
+main .articleBusiness .headingTypeA img {
+	width: 21px;
+	height: 21px;
+	margin-right: 12px;
+	display: inline-block;
+	vertical-align: bottom;
+}
+main .articleBusiness .headingTypeAImage {
+	text-align: center;
+}
+main .articleBusiness .headingTypeAImage img {
+	width: 750px;
+	height: auto;
+}
+main .articleBusiness .headingTypeApdf:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+main .articleBusiness .headingTypeApdf {
+	background-color: #005bac;
+	width: 298px;
+	height: 70px;
+	margin: 30px auto;
+	color: #ffffff;
+	text-align: center;
+}
+main .articleBusiness .headingTypeApdf .headingTypeApdf_chevronRight {
+	height: 100%;
+	float: left;
+}
+main .articleBusiness .headingTypeApdf .headingTypeApdf_chevronRight img {
+	vertical-align: middle
+}
+
+
+/* headingTable 上のリンク */
+main .articleBusiness .headingTypeANavi:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+main .articleBusiness .headingTypeANavi {
+	margin: 50px 0;
+}
+main .articleBusiness .headingTypeANavi span.headingTypeANavi_left a,
+main .articleBusiness .headingTypeANavi span.headingTypeANavi_right a {
+	color: #005bac;
+}
+main .articleBusiness .headingTypeANavi span.headingTypeANavi_left a:hover,
+main .articleBusiness .headingTypeANavi span.headingTypeANavi_right a:hover {
+	text-decoration: underline;
+}
+main .articleBusiness .headingTypeANavi span.headingTypeANavi_left {
+	float: left;
+}
+main .articleBusiness .headingTypeANavi span.headingTypeANavi_right {
+	float: right;
+}
+/* headingTable */
+main .articleBusiness .headingTable {
+	padding: 21px;
+	background-color: #deecf8;
+	justify-content: space-around;
+}
+main .articleBusiness .headingTable p {
+	font-weight: bold;
+}
+main .articleBusiness .headingTable ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+}
+main .articleBusiness .headingTable ul li {
+	width: 240px;
+	height: 70px;
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	box-sizing: border-box;
+	display: block;
+	text-align: center;
+}
+
+
+/* ---------- aside ---------- */
+/* 企業情報 */
+aside {
+	width: 1000px;
+	margin: 0 auto;
+}
+aside .companyInfo {
+	border-top: 2px solid #333333;
+}
+aside .companyInfo h2 {
+	font-size: 19px;
+	line-height: 0.82;
+	padding: 30px 0;
+}
+aside .companyInfo h3 {
+	border-top: 1px dotted #333333;
+	padding-top: 40px;
+}
+aside .companyInfo a {
+	color: #005bac;
+}
+aside .companyInfo a:hover {
+	text-decoration: underline;
+}
+aside .companyInfo ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+aside .companyInfo ul li {
+	width: 250px;
+	background-image: url("../images/icon-chevronRight.svg");
+	background-size: 7px 10px;
+	background-repeat: no-repeat;
+	background-position: 0 5px;
+	padding-left: 15px;
+	box-sizing: border-box;
+	display: block;
+}
+
+/* 前のページへ戻る */
+aside .backPage {
+	padding: 60px 0 90px 0;
+	border-top: 1px dotted #333333;
+}
+aside .backPage img {
+	padding-right: 10px;
+}
+aside .backPage a {
+	color: #005bac;
+}
+aside .backPage a:hover {
+	text-decoration: underline;
+}
+
+/* ----------フッター ---------- */
+/* snsボタン */
+footer .sns_btn {
+	text-align: center;
+	padding: 30px 0;
+	border-width: 2px 0;
+	border-style: solid;
+	border-color: #999999;
+}
+
+footer .sns_btn img {
+	width: 24px;
+	height: 24px;
+	margin-left: 30px;
+	vertical-align: middle;
+}
+footer .sns_btn p {
+	font-size: 18px;
+	line-height: 0.82;
+	color: #333333;
+	font-weight: bold;
+	display: inline-block;
+}
+
+/* footerSiteMap */
+footer .footerSiteMap {
+	border-bottom: 1px solid #999999;
+}
+footer .footerSiteMap ul li {
+	background-image: url("../images/icon-chevronRight.svg");
+	background-size: 7px 10px;
+	background-repeat: no-repeat;
+	background-position: 0 5px;
+	padding-left: 15px;
+}
+footer .footerSiteMap ul li a {
+	color: #666666;
+}
+footer .footerSiteMap ul li a:hover {
+	text-decoration: underline;
+}
+
+/* footer Nabi */
+footer .footerNavi {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+footer .footerNavi ul:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+footer .footerNavi ul li {
+	color: #999999;
+	font-size: 12px;
+	line-height: 1.5;
+	border-left: 1px solid #999999;
+	padding: 0 15px;
+	float: left;
+}
+footer .footerNavi ul li:first-child {
+	border-left: none;
+	padding-left: 0;
+}
+footer .footerNavi ul li a {
+	color: #999999;
+}
+footer .footerNavi ul li a:hover {
+	text-decoration: underline;
+}
+
+
+
+
