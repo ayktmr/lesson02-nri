@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	font-family: cabin;
+	font-family:'Noto Sans JP',sans-serif!important;
 	color: #333333;
 }
 a {
@@ -197,6 +198,8 @@ main .articleBusiness .headingTypeApdf:after {
 	clear: both;
 	display: block;
 }
+
+/* pdfダウンロードリンク */
 main .articleBusiness .headingTypeApdf {
 	background-color: #005bac;
 	width: 298px;
@@ -204,6 +207,7 @@ main .articleBusiness .headingTypeApdf {
 	margin: 30px auto;
 	color: #ffffff;
 	text-align: center;
+	position: relative;
 }
 main .articleBusiness .headingTypeApdf p {
 	display: inline-block;
@@ -213,7 +217,9 @@ main .articleBusiness .headingTypeApdf .headingTypeApdf_chevronRight {
 	float: left;
 }
 main .articleBusiness .headingTypeApdf .headingTypeApdf_chevronRight img {
-	display: inline-block;
+	position: absolute;
+	left: 3px;
+	top: 35px;
 }
 
 
@@ -257,16 +263,20 @@ main .articleBusiness .headingTable ul {
 
 }
 main .articleBusiness .headingTable ul li {
-	margin-bottom: 20px;
 	background-color: #ffffff;
 	border: 1px solid #cccccc;
 	box-sizing: border-box;
 	position: relative;
 }
+main .articleBusiness .headingTable ul li:nth-child(n+4){
+	margin-top: 20px;
+	height: 50px;
+}
+
 main .articleBusiness .headingTable ul li a {
 	width: 200px;
-	height: 70px;
-	padding: 0 20px;
+	height: 30px;
+	padding: 20px 20px;
 	color: #005bac;
 	display: inline-flex;
 	justify-content: center;
@@ -294,8 +304,11 @@ aside .companyInfo h2 {
 	padding: 30px 0;
 }
 aside .companyInfo h3 {
+	font-size: 15px;
+	line-height: 0.78;
 	border-top: 1px dotted #333333;
 	padding-top: 40px;
+	margin-top: 30px;
 }
 aside .companyInfo a {
 	color: #005bac;
@@ -309,9 +322,17 @@ aside .companyInfo ul {
 	flex-wrap: wrap;
 }
 aside .companyInfo ul li {
+	margin-top: 25px;
+	font-size: 14px;
 	width: 250px;
 	box-sizing: border-box;
 	display: block;
+}
+aside .companyInfo ul li img {
+	width: 3px;
+	height: auto;
+	margin: 0 10px 0 0;
+	vertical-align: top;
 }
 
 /* 前のページへ戻る */
@@ -356,9 +377,10 @@ footer .sns_btn p {
 /* footerSiteMap */
 footer .footerSiteMap {
 	border-bottom: 1px solid #999999;
+	padding: 30px 10px;
 }
 footer .footerSiteMap section {
-	width: 300px;
+	width: 280px;
 	display: inline-flex;
 }
 footer .footerSiteMap ul li {
@@ -367,12 +389,19 @@ footer .footerSiteMap ul li {
 	background-repeat: no-repeat;
 	background-position: 0 5px;
 	padding-left: 15px;
+	margin-bottom: 20px;
 }
 footer .footerSiteMap ul li a {
 	color: #666666;
+	font-size: 14px;
 }
 footer .footerSiteMap ul li a:hover {
 	text-decoration: underline;
+}
+footer .footerSiteMap ul li a.footerSiteMap_bold {
+	color: #000000;
+	font-size: 16px;
+	font-weight: bold;
 }
 
 /* footer Nabi */
