@@ -246,10 +246,6 @@ main .articleBusiness .headingTable {
 	background-color: #deecf8;
 	justify-content: space-around;
 }
-main .articleBusiness .headingTable img {
-	left: 3px;
-	top: 3px;
-}
 main .articleBusiness .headingTable p {
 	font-weight: bold;
 }
@@ -268,12 +264,19 @@ main .articleBusiness .headingTable ul li {
 	position: relative;
 }
 main .articleBusiness .headingTable ul li a {
-	width: 240px;
+	width: 200px;
 	height: 70px;
+	padding: 0 20px;
 	color: #005bac;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
+}
+main .articleBusiness .headingTable img.icon_chevron {
+	position: absolute;
+	left: 3px;
+	top: 30px;
 }
 
 /* ---------- aside ---------- */
