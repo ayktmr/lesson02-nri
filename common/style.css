@@ -205,12 +205,15 @@ main .articleBusiness .headingTypeApdf {
 	color: #ffffff;
 	text-align: center;
 }
+main .articleBusiness .headingTypeApdf p {
+	display: inline-block;
+}
 main .articleBusiness .headingTypeApdf .headingTypeApdf_chevronRight {
 	height: 100%;
 	float: left;
 }
 main .articleBusiness .headingTypeApdf .headingTypeApdf_chevronRight img {
-	vertical-align: middle
+	display: inline-block;
 }
 
 
@@ -237,11 +240,15 @@ main .articleBusiness .headingTypeANavi span.headingTypeANavi_left {
 main .articleBusiness .headingTypeANavi span.headingTypeANavi_right {
 	float: right;
 }
-/* headingTable */
+/* NRIの強み　枠 */
 main .articleBusiness .headingTable {
-	padding: 21px;
+	padding:  5px 20px;
 	background-color: #deecf8;
 	justify-content: space-around;
+}
+main .articleBusiness .headingTable img {
+	left: 3px;
+	top: 3px;
 }
 main .articleBusiness .headingTable p {
 	font-weight: bold;
@@ -254,15 +261,20 @@ main .articleBusiness .headingTable ul {
 
 }
 main .articleBusiness .headingTable ul li {
-	width: 240px;
-	height: 70px;
+	margin-bottom: 20px;
 	background-color: #ffffff;
 	border: 1px solid #cccccc;
 	box-sizing: border-box;
-	display: block;
-	text-align: center;
+	position: relative;
 }
-
+main .articleBusiness .headingTable ul li a {
+	width: 240px;
+	height: 70px;
+	color: #005bac;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
 
 /* ---------- aside ---------- */
 /* 企業情報 */
@@ -341,6 +353,10 @@ footer .sns_btn p {
 /* footerSiteMap */
 footer .footerSiteMap {
 	border-bottom: 1px solid #999999;
+}
+footer .footerSiteMap section {
+	width: 300px;
+	display: inline-flex;
 }
 footer .footerSiteMap ul li {
 	background-image: url("../images/icon-chevronRight.svg");
