@@ -41,7 +41,7 @@ header {
 .articleDetailHead .logo_company img {
 	width: auto;
 	height: 30px;
-	margin: 15px 0;
+	padding: 12px 0;
 }
 /*　グローバルメニュー　*/
 .articleDetailHead .globalNavi:after {
@@ -58,12 +58,16 @@ header {
 	line-height: 1.5;
 	font-weight: bold;
 	color: #000000;
-	display: block;
-	padding: 20px 0;
+	display: table-cell;
+	vertical-align: middle;
+	height: 60px;
+	box-sizing: border-box;
+	border-bottom: 2px solid rgba(0,0,0,0);   /* ホバー時文字の高さ変わるのを防ぐ */
 }
 .articleDetailHead .globalNavi a:hover {
 	color: #005bac;
 	border-bottom: 2px solid #005bac;
+	height: 60px;
 	box-sizing: border-box;
 }
 .articleDetailHead .globalNavi ul:after {
@@ -72,11 +76,14 @@ header {
 	display: block;
 }
 .articleDetailHead .globalNavi ul {
-	margin:0;
+	height: 60px;
+	margin: 0 10px 0 0;
+	/*display: flex;*/
 }
 .articleDetailHead .globalNavi ul li {
-	margin-right: 15px;
 	float: left;
+	margin-right: 15px;
+	height: 60px;
 }
 /*　虫眼鏡地球ハンバーガーアイコン　*/
 .articleDetailHead .logo_menu:after {
@@ -84,19 +91,23 @@ header {
 	clear: both;
 	display: block;
 }
-.articleDetailHead .logo_menu img {
-	width: 20px;
-	height: 20px;
-}
-.articleDetailHead .logo_menu a {
-	float: left;
-	padding: 20px 19px;
-	display: block;
-}
 .articleDetailHead .logo_menu {
 	float: right;
 	bottom: 0;
 }
+.articleDetailHead .logo_menu img {
+	width: 20px;
+	height: 20px;
+
+}
+.articleDetailHead .logo_menu a {
+	height: 60px;
+	width: 60px;
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
 
 /*　パンくずリスト　*/
 main .articleDetail .topicPath {
@@ -160,6 +171,8 @@ main .articleBusiness .sns_btn img {
 	height: 24px;
 	margin-left: 17px;
 	vertical-align: middle;
+	display: flex;
+	justify-content: center;
 }
 main .articleBusiness .sns_btn p {
 	font-size: 10px;
@@ -179,6 +192,10 @@ main .articleBusiness .headingTypeA h2 {
 	color: #000000;
 	margin: 35px 0;
 }
+main .articleBusiness .headingTypeA p {
+	font-size: 16px;
+	line-height:2.20;
+}
 main .articleBusiness .headingTypeA img {
 	width: 21px;
 	height: 21px;
@@ -190,16 +207,16 @@ main .articleBusiness .headingTypeAImage {
 	text-align: center;
 }
 main .articleBusiness .headingTypeAImage img {
-	width: 750px;
+	width: 800px;
 	height: auto;
 }
+
+/* pdfダウンロードリンク */
 main .articleBusiness .headingTypeApdf:after {
 	content: "";
 	clear: both;
 	display: block;
 }
-
-/* pdfダウンロードリンク */
 main .articleBusiness .headingTypeApdf {
 	background-color: #005bac;
 	width: 298px;
@@ -230,7 +247,7 @@ main .articleBusiness .headingTypeANavi:after {
 	display: block;
 }
 main .articleBusiness .headingTypeANavi {
-	margin: 50px 0;
+	padding: 40px 0;
 }
 main .articleBusiness .headingTypeANavi span.headingTypeANavi_left a,
 main .articleBusiness .headingTypeANavi span.headingTypeANavi_right a {
@@ -341,7 +358,11 @@ aside .backPage {
 	border-top: 1px dotted #333333;
 }
 aside .backPage img {
+	width: 3px;
+	height: auto;
 	padding-right: 10px;
+	margin: 0;
+	vertical-align: middle;
 }
 aside .backPage a {
 	color: #005bac;
