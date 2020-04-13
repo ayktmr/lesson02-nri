@@ -7,6 +7,9 @@ body {
 a {
 	text-decoration: none;
 }
+p {
+	margin:0;
+}
 ul {
 	list-style-type: none;
 	padding: 0;
@@ -127,6 +130,9 @@ main .articleDetail .topicPath ul li {
 	line-height: 1.5;
 	float: left;
 }
+main .articleDetail .topicPath ul li a {
+	color: inherit;
+}
 
 /*---------- main ----------*/
 main {
@@ -171,8 +177,6 @@ main .articleBusiness .sns_btn img {
 	height: 24px;
 	margin-left: 17px;
 	vertical-align: middle;
-	display: flex;
-	justify-content: center;
 }
 main .articleBusiness .sns_btn p {
 	font-size: 10px;
@@ -212,11 +216,15 @@ main .articleBusiness .headingTypeAImage img {
 }
 
 /* pdfダウンロードリンク */
-main .articleBusiness .headingTypeApdf:after {
+
+
+
+
+/*main .articleBusiness .headingTypeApdf:after {
 	content: "";
 	clear: both;
 	display: block;
-}
+}*/
 main .articleBusiness .headingTypeApdf {
 	background-color: #005bac;
 	width: 298px;
@@ -225,15 +233,25 @@ main .articleBusiness .headingTypeApdf {
 	color: #ffffff;
 	text-align: center;
 	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-main .articleBusiness .headingTypeApdf p {
+main .articleBusiness .headingTypeApdf span {
 	display: inline-block;
 }
-main .articleBusiness .headingTypeApdf .headingTypeApdf_chevronRight {
+main .articleBusiness .headingTypeApdf a {
+	display: block;
+	color: inherit;
+}
+main .articleBusiness .headingTypeApdf a:hover {
+	opacity: 0.8;
+}
+/*main .articleBusiness .headingTypeApdf .headingTypeApdf_chevronRight {
 	height: 100%;
 	float: left;
-}
-main .articleBusiness .headingTypeApdf .headingTypeApdf_chevronRight img {
+}*/
+main .articleBusiness .headingTypeApdf img.icon_chevron {
 	position: absolute;
 	left: 3px;
 	top: 35px;
@@ -263,34 +281,139 @@ main .articleBusiness .headingTypeANavi span.headingTypeANavi_left {
 main .articleBusiness .headingTypeANavi span.headingTypeANavi_right {
 	float: right;
 }
+
 /* NRIの強み　枠 */
 main .articleBusiness .headingTable {
-	padding:  5px 20px;
 	background-color: #deecf8;
-	justify-content: space-around;
+	height: 240px;
+	text-align: center;
 }
 main .articleBusiness .headingTable p {
+	text-align: left;
+	padding-left: 21px;
+	padding-top: 30px;
 	font-weight: bold;
 }
 main .articleBusiness .headingTable ul {
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
 	flex-wrap: wrap;
 
 }
 main .articleBusiness .headingTable ul li {
 	background-color: #ffffff;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	position: relative;
+}
+main .articleBusiness .headingTable ul li.hedingTable_1 {
+	width: 240px;
+	height: 70px;
+}
+main .articleBusiness .headingTable ul li.hedingTable_2 {
+	width: 240px;
+	height: 50px;
+}
+main .articleBusiness .headingTable ul li.hedingTable_1 a {
+	width: 240px;
+	height: 70px;
+	padding: 0 23px;
+	color: #005bac;
+	border: 1px solid #cccccc;
+	box-sizing: border-box;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+main .articleBusiness .headingTable ul li.hedingTable_2 a {
+	width: 240px;
+	height: 50px;
+	color: #005bac;
+	border: 1px solid #cccccc;
+	box-sizing: border-box;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+main .articleBusiness .headingTable ul li.hedingTable_1 a:hover,
+main .articleBusiness .headingTable ul li.hedingTable_2 a:hover {
+	background-color: #f4f4f4;
+}
+main .articleBusiness .headingTable ul li.hedingTable_1 a img {
+	position: absolute;
+	top: 30px;
+	left: 5px;
+}
+main .articleBusiness .headingTable ul li.hedingTable_2 a img {
+	position: absolute;
+	top: 20px;
+	left: 5px;
+}
+
+/*main .articleBusiness .headingTable {
+	background-color: #deecf8;
+	height: 242px;
+	text-align: center;
+}
+main .articleBusiness .headingTable table {
+	border-spacing: 10px;
+	margin: 0 auto;
+}
+main .articleBusiness .headingTable table caption {
+	font-weight: bold;
+	text-align: left;
+}
+main .articleBusiness .headingTable table tr td {
+	background-color: #ffffff;
 	border: 1px solid #cccccc;
 	box-sizing: border-box;
 	position: relative;
 }
-main .articleBusiness .headingTable ul li:nth-child(n+4){
+main .articleBusiness .headingTable table tr td.hedingTable_1 a {
+	width: 200px;
+	height: 30px;
+	padding: 20px 20px;
+	color: #005bac;
+}
+main .articleBusiness .headingTable table tr td.hedingTable_2 a {
+	width: 200px;
+	height: 20px;
+	padding: 20px 10px;
+}
+main .articleBusiness .headingTable img.icon_chevron {
+	position: absolute;
+	left: 3px;
+	top: 30px;
+}
+main .articleBusiness .headingTable table tr td a {
+	display: block;
+}*/
+
+
+
+/*main .articleBusiness .headingTable {
+	padding:  5px 20px;
+	background-color: #deecf8;
+	justify-content: space-around;
+}*/
+
+/*main .articleBusiness .headingTable ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}*/
+/*main .articleBusiness .headingTable ul li {
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	box-sizing: border-box;
+	position: relative;
+}*/
+/*main .articleBusiness .headingTable ul li:nth-child(n+4){
 	margin-top: 20px;
 	height: 50px;
-}
+}*/
 
-main .articleBusiness .headingTable ul li a {
+/*main .articleBusiness .headingTable ul li a {
 	width: 200px;
 	height: 30px;
 	padding: 20px 20px;
@@ -299,12 +422,8 @@ main .articleBusiness .headingTable ul li a {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-}
-main .articleBusiness .headingTable img.icon_chevron {
-	position: absolute;
-	left: 3px;
-	top: 30px;
-}
+}*/
+
 
 /* ---------- aside ---------- */
 /* 企業情報 */
