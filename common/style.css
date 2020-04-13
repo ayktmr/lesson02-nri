@@ -501,20 +501,19 @@ footer .sns_btn p {
 
 /* footerSiteMap */
 footer .footerSiteMap {
-	border-bottom: 1px solid #999999;
-	padding: 30px 10px;
+	border-bottom: 1px solid #cccccc;
+	padding: 30px 0;
+	display: inline-flex;
+	flex-wrap: wrap;
+	width: 100%;
 }
 footer .footerSiteMap section {
-	width: 280px;
-	display: inline-flex;
+	width: 25%;
 }
 footer .footerSiteMap ul li {
-	background-image: url("../images/icon-chevronRight.svg");
-	background-size: 7px 10px;
-	background-repeat: no-repeat;
-	background-position: 0 5px;
-	padding-left: 15px;
+	padding-left: 10px;
 	margin-bottom: 20px;
+	box-sizing: border-box;
 }
 footer .footerSiteMap ul li a {
 	color: #666666;
@@ -527,6 +526,12 @@ footer .footerSiteMap ul li a.footerSiteMap_bold {
 	color: #000000;
 	font-size: 16px;
 	font-weight: bold;
+}
+footer .footerSiteMap ul li img {
+	width: 3px;
+	height: auto;
+	margin: 0 10px 0 0;
+	vertical-align: middle;
 }
 
 /* footer Nabi */
@@ -558,7 +563,10 @@ footer .footerNavi ul li a {
 footer .footerNavi ul li a:hover {
 	text-decoration: underline;
 }
-
+/*　コピーライト　*/
+footer .footerNavi small {
+	font-size: 10px;
+}
 
 
 
