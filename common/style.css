@@ -216,41 +216,26 @@ main .articleBusiness .headingTypeAImage img {
 }
 
 /* pdfダウンロードリンク */
-
-
-
-
-/*main .articleBusiness .headingTypeApdf:after {
-	content: "";
-	clear: both;
-	display: block;
-}*/
 main .articleBusiness .headingTypeApdf {
-	background-color: #005bac;
-	width: 298px;
-	height: 70px;
 	margin: 30px auto;
 	color: #ffffff;
 	text-align: center;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-main .articleBusiness .headingTypeApdf span {
-	display: inline-block;
 }
 main .articleBusiness .headingTypeApdf a {
-	display: block;
+	background-color: #005bac;
+	width: 298px;
+	height: 70px;
 	color: inherit;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
 }
 main .articleBusiness .headingTypeApdf a:hover {
+	width: 298px;
+	height: 70px;
 	opacity: 0.8;
 }
-/*main .articleBusiness .headingTypeApdf .headingTypeApdf_chevronRight {
-	height: 100%;
-	float: left;
-}*/
 main .articleBusiness .headingTypeApdf img.icon_chevron {
 	position: absolute;
 	left: 3px;
