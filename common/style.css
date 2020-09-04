@@ -45,10 +45,12 @@ header {
 	width: auto;
 	height: 30px;
 	padding: 12px 0;
+	vertical-align:
 }
+
 /*　グローバルメニュー　*/
 .articleDetailHead .globalNavi:after {
-	content= "";
+	content: "";
 	clear: both;
 	display: block;
 }
@@ -106,7 +108,11 @@ header {
 .articleDetailHead .logo_menu a {
 	height: 60px;
 	width: 60px;
+	display : -webkit-inline-box;
+	display : -ms-inline-flexbox;
+	display : -webkit-inline-flex;
 	display: inline-flex;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 	align-items: center;
 }
@@ -122,7 +128,7 @@ main .articleDetail .topicPath ul:after {
 	display: block;
 }
 main .articleDetail .topicPath ul {
-	margin-left: 40px;
+	margin-left: 35px;
 }
 main .articleDetail .topicPath ul li {
 	color: #999999;
@@ -136,7 +142,7 @@ main .articleDetail .topicPath ul li a {
 
 /*---------- main ----------*/
 main {
-	margin: 70px 0;
+	margin: 60px 0 130px 0;
 	z-index: 0;
 }
 
@@ -149,20 +155,20 @@ main .articleDetailBody .mainVisual .mainVisualImage img {
 }
 
 /* トップ画像に重なるテキスト */
-.articleDetailBody .mainVisual {
+main .articleDetailBody .mainVisual {
 	position: relative;
 }
-.articleDetailBody .mainVisualText {
+main .articleDetailBody .mainVisualText {
 	color: #ffffff;
 	position: absolute;
 	top: 30px;
-	left: 20px;
+	left: 140px;
 }
-.articleDetailBody .mainVisualText p {
+main .articleDetailBody .mainVisualText p {
 	font-size: 18px;
 	margin: 0;
 }
-.articleDetailBody .mainVisualText h1 {
+main .articleDetailBody .mainVisualText h1 {
 	font-size: 26px;
 	margin: 0;
 	padding-top: 20px;
@@ -198,7 +204,8 @@ main .articleBusiness .headingTypeA h2 {
 }
 main .articleBusiness .headingTypeA p {
 	font-size: 16px;
-	line-height:2.20;
+	line-height:2.07;
+	margin-bottom: 20px;
 }
 main .articleBusiness .headingTypeA img {
 	width: 21px;
@@ -217,7 +224,7 @@ main .articleBusiness .headingTypeAImage img {
 
 /* pdfダウンロードリンク */
 main .articleBusiness .headingTypeApdf {
-	margin: 30px auto;
+	margin: 35px auto;
 	color: #ffffff;
 	text-align: center;
 }
@@ -226,7 +233,12 @@ main .articleBusiness .headingTypeApdf a {
 	width: 298px;
 	height: 70px;
 	color: inherit;
+	display : -webkit-inline-box;
+	display : -ms-inline-flexbox;
+	display : -webkit-inline-flex;
 	display: inline-flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	align-items: center;
 	position: relative;
@@ -238,8 +250,11 @@ main .articleBusiness .headingTypeApdf a:hover {
 }
 main .articleBusiness .headingTypeApdf img.icon_chevron {
 	position: absolute;
-	left: 3px;
+	left: 7px;
 	top: 35px;
+	width: 4px;
+	height: auto;
+	margin: 0 5px;
 }
 
 
@@ -250,7 +265,7 @@ main .articleBusiness .headingTypeANavi:after {
 	display: block;
 }
 main .articleBusiness .headingTypeANavi {
-	padding: 40px 0;
+	padding: 45px 0;
 }
 main .articleBusiness .headingTypeANavi span.headingTypeANavi_left a,
 main .articleBusiness .headingTypeANavi span.headingTypeANavi_right a {
@@ -271,6 +286,7 @@ main .articleBusiness .headingTypeANavi span.headingTypeANavi_right {
 main .articleBusiness .headingTable {
 	background-color: #deecf8;
 	height: 240px;
+	margin-bottom: 60px;
 	text-align: center;
 }
 main .articleBusiness .headingTable p {
@@ -280,6 +296,8 @@ main .articleBusiness .headingTable p {
 	font-weight: bold;
 }
 main .articleBusiness .headingTable ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	flex-wrap: wrap;
 
@@ -305,8 +323,13 @@ main .articleBusiness .headingTable ul li.hedingTable_1 a {
 	color: #005bac;
 	border: 1px solid #cccccc;
 	box-sizing: border-box;
+	display : -webkit-inline-box;
+	display : -ms-inline-flexbox;
+	display : -webkit-inline-flex;
 	display: inline-flex;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 }
 main .articleBusiness .headingTable ul li.hedingTable_2 a {
@@ -315,8 +338,13 @@ main .articleBusiness .headingTable ul li.hedingTable_2 a {
 	color: #005bac;
 	border: 1px solid #cccccc;
 	box-sizing: border-box;
+	display : -webkit-inline-box;
+	display : -ms-inline-flexbox;
+	display : -webkit-inline-flex;
 	display: inline-flex;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 }
 main .articleBusiness .headingTable ul li.hedingTable_1 a:hover,
@@ -334,118 +362,47 @@ main .articleBusiness .headingTable ul li.hedingTable_2 a img {
 	left: 5px;
 }
 
-/*main .articleBusiness .headingTable {
-	background-color: #deecf8;
-	height: 242px;
-	text-align: center;
-}
-main .articleBusiness .headingTable table {
-	border-spacing: 10px;
-	margin: 0 auto;
-}
-main .articleBusiness .headingTable table caption {
-	font-weight: bold;
-	text-align: left;
-}
-main .articleBusiness .headingTable table tr td {
-	background-color: #ffffff;
-	border: 1px solid #cccccc;
-	box-sizing: border-box;
-	position: relative;
-}
-main .articleBusiness .headingTable table tr td.hedingTable_1 a {
-	width: 200px;
-	height: 30px;
-	padding: 20px 20px;
-	color: #005bac;
-}
-main .articleBusiness .headingTable table tr td.hedingTable_2 a {
-	width: 200px;
-	height: 20px;
-	padding: 20px 10px;
-}
-main .articleBusiness .headingTable img.icon_chevron {
-	position: absolute;
-	left: 3px;
-	top: 30px;
-}
-main .articleBusiness .headingTable table tr td a {
-	display: block;
-}*/
-
-
-
-/*main .articleBusiness .headingTable {
-	padding:  5px 20px;
-	background-color: #deecf8;
-	justify-content: space-around;
-}*/
-
-/*main .articleBusiness .headingTable ul {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}*/
-/*main .articleBusiness .headingTable ul li {
-	background-color: #ffffff;
-	border: 1px solid #cccccc;
-	box-sizing: border-box;
-	position: relative;
-}*/
-/*main .articleBusiness .headingTable ul li:nth-child(n+4){
-	margin-top: 20px;
-	height: 50px;
-}*/
-
-/*main .articleBusiness .headingTable ul li a {
-	width: 200px;
-	height: 30px;
-	padding: 20px 20px;
-	color: #005bac;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-}*/
-
 
 /* ---------- aside ---------- */
 /* 企業情報 */
 aside {
-	width: 1000px;
+	width: 80%;
 	margin: 0 auto;
 }
 aside .companyInfo {
 	border-top: 2px solid #333333;
 }
 aside .companyInfo h2 {
-	font-size: 19px;
-	line-height: 0.82;
-	padding: 30px 0;
+	font-size: 125%;
+/*	font-size: 20px;
+	line-height: 0.82;*/
+	padding: 30px 0 20px 0;
 }
 aside .companyInfo h3 {
-	font-size: 15px;
-	line-height: 0.78;
+	font-size: 1rem;
+/*	font-size: 16px;
+	line-height: 0.78;*/
 	border-top: 1px dotted #333333;
 	padding-top: 40px;
-	margin-top: 30px;
-}
-aside .companyInfo a {
-	color: #005bac;
-	display: block;
+	margin-top: 20px;
 }
 aside .companyInfo a:hover {
 	text-decoration: underline;
 }
 aside .companyInfo ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	margin-bottom: 30px;
 }
 aside .companyInfo ul li {
 	margin-top: 25px;
-	font-size: 14px;
-	width: 250px;
+	font-size: 0.875rem;
+	width: 25%;
+/*	font-size: 14px;*/
+/*	width: 250px;*/
 	box-sizing: border-box;
 	display: block;
 }
@@ -455,7 +412,10 @@ aside .companyInfo ul li img {
 	margin: 0 10px 0 0;
 	vertical-align: top;
 }
-
+aside .companyInfo a {
+	color: #005bac;
+	display: block;
+}
 /* 前のページへ戻る */
 aside .backPage {
 	padding: 60px 0 90px 0;
@@ -479,16 +439,16 @@ aside .backPage a:hover {
 /* snsボタン */
 footer .sns_btn {
 	text-align: center;
-	padding: 30px 0;
+	padding: 35px 0 30px 0;
 	border-width: 2px 0;
 	border-style: solid;
 	border-color: #999999;
 }
 
 footer .sns_btn img {
-	width: 24px;
-	height: 24px;
-	margin-left: 30px;
+	width: 28px;
+	height: 28px;
+	margin-left: 34px;
 	vertical-align: middle;
 }
 footer .sns_btn p {
@@ -502,13 +462,23 @@ footer .sns_btn p {
 /* footerSiteMap */
 footer .footerSiteMap {
 	border-bottom: 1px solid #cccccc;
-	padding: 30px 0;
-	display: inline-flex;
-	flex-wrap: wrap;
 	width: 100%;
+	margin: 0 auto;
+}
+footer .footerSiteMap div {
+	display : -webkit-inline-box;
+	display : -ms-inline-flexbox;
+	display : -webkit-inline-flex;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 80%;
+	margin: 0 auto;
 }
 footer .footerSiteMap section {
 	width: 25%;
+	padding: 35px 0;
 }
 footer .footerSiteMap ul li {
 	padding-left: 10px;
@@ -516,16 +486,19 @@ footer .footerSiteMap ul li {
 	box-sizing: border-box;
 }
 footer .footerSiteMap ul li a {
-	color: #666666;
+	color: #333333;
 	font-size: 14px;
 }
 footer .footerSiteMap ul li a:hover {
 	text-decoration: underline;
 }
 footer .footerSiteMap ul li a.footerSiteMap_bold {
-	color: #000000;
+	color: #333333;
 	font-size: 16px;
 	font-weight: bold;
+}
+footer .footerSiteMap ul li.footerSiteMap_head{
+	margin-bottom: 25px;
 }
 footer .footerSiteMap ul li img {
 	width: 3px;
@@ -538,7 +511,10 @@ footer .footerSiteMap ul li img {
 footer .footerNavi {
 	width: 1000px;
 	margin: 0 auto;
-	padding: 40px 0;
+	padding: 50px 0 120px 0;
+}
+footer .footerNavi ul {
+	margin-bottom: 30px;
 }
 footer .footerNavi ul:after {
 	content: "";
@@ -549,8 +525,10 @@ footer .footerNavi ul li {
 	color: #999999;
 	font-size: 12px;
 	line-height: 1.5;
+	height: 14px;
 	border-left: 1px solid #999999;
-	padding: 0 15px;
+	padding: 0 17px;
+	box-sizing: border-box;
 	float: left;
 }
 footer .footerNavi ul li:first-child {
@@ -558,15 +536,56 @@ footer .footerNavi ul li:first-child {
 	padding-left: 0;
 }
 footer .footerNavi ul li a {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: start;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: start;
 	color: #999999;
 }
 footer .footerNavi ul li a:hover {
 	text-decoration: underline;
 }
 /*　コピーライト　*/
-footer .footerNavi small {
-	font-size: 10px;
+footer .footerNavi p {
+	font-size: 5px;
+	line-height: 0.71;
 }
 
 
+/* 1200px以下 */
+@media screen and (max-width: 1180px){
+.articleDetailBody .mainVisualText {
+	left: 100px;
+}
+.articleDetailHead .globalNavi {
+	display: none;
+}
+aside .companyInfo ul li {
+	font-size: 80%;
+	width: 25%;
+	box-sizing: border-box;
+	display: block;
+}
+footer .footerSiteMap ul li a{
+	font-size: 70%;
+}
+footer .footerSiteMap ul li a.footerSiteMap_bold {
+	font-size: 70%;
+}
+footer .footerNavi {
+	width: 80%;
+}
+footer .footerNavi ul li {
+	font-size: 70%;
+	line-height: 1.5;
+	height: 14px;
+	border-left: 1px solid #999999;
+	padding: 0 8px;
+	box-sizing: border-box;
+	float: left;
+}
+}
 
